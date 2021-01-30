@@ -49,15 +49,6 @@ app.use((req, res, next) => {
 });
 
 //Routes
-// app.use('/', require('./routes/index'));
-// app.use('/users', require('./routes/users'));
-// routes
-// app.get('/', (req, res) => {
-    
-//     res.render('index', {title: 'Home', style: 'index'});
-
-// });
-
 app.use('/', require('./routes/index'))
 
 app.use('/users', require('./routes/users'));
