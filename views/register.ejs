@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+    <%- include('./partials/nav.ejs') %>
+
+        <body>
+            <div class="wrapper">
+                <h1>Sign Up</h1>
+                <%- include('./partials/msg.ejs') %>
+                    <form action="/users/register" method="POST">
+                        <label for="username">Username:</label>
+                        <input type="text" placeholder="Username" id="username" name="username" value="<%= typeof username != 'undefined' ? username : '' %>"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Email" id="email" name="email" value="<%= typeof email != 'undefined' ? email : '' %>"><br>
+                        <label for="password">Password:</label>
+                        <input type="password" placeholder="Password" id="password" name="password" value="<%= typeof password != 'undefined' ? password : '' %>"><br>
+                        <label for="password2">Confirm Password:</label>
+                        <input type="password" placeholder="Password" id="password2" name="password2" value="<%= typeof password2 != 'undefined' ? password2 : '' %>"><br>
+                        <input type="submit" value="Submit" id="submit">
+                    </form>
+            </div>
+
+        </body>
+
+
+
+</html>
