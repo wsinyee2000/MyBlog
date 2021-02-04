@@ -13,6 +13,10 @@ header {
     height: 10%;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header button {
     width: 100px;
     height: 50px;

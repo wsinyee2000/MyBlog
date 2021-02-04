@@ -13,6 +13,10 @@ header {
     height: 10%;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header button {
     width: 100px;
     height: 50px;
@@ -36,11 +40,12 @@ header button:hover {
     text-align: center;
     line-height: 60px;
     font-size: 30px;
-    padding-top: 30px
+    padding-top: 30px;
 }
 
 .wrapper h1 {
     margin-bottom: 30px;
+    text-align: center;
 }
 
 input[type="text"],
@@ -56,4 +61,24 @@ input[type="submit"] {
     padding: 10px;
     font-size: 20px;
     margin-bottom: 20px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.alert {
+    color: red;
+    font-size: 15px;
+    line-height: 1;
+    /* margin-left: 300px; */
+}
+
+form {
+    text-align: center;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 20px;
+    /* margin-left: 20px; */
+    color: cornflowerblue;
 }
